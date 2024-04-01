@@ -7,8 +7,9 @@
 ## The Code
 All the variables in the specification were pre-initialized with set values. Scalar variables `n` and `A` were initialized
 at _2^20_ and _2.0_, respectively. while  Vector `X` was initialized with values _{1.0, 2.0, 3.0...`n`}_ with increments 
-of _1.0_ until `n`. Vector `Y` was initialized with values _{11.0, 12.0, 13.0...`n`}_ with the same increment. The sanity
-check that was done included comparing the results between the C and Assembly kernels every run.
+of _1.0_ until `n`. Vector `Y` was initialized with values _{11.0, 12.0, 13.0...`n`}_ with the same increment. It should also
+be noted that the machine was not able to handle 2^30; hence, the limit was set to 2^28. The sanity check that was done included
+comparing the results between the C and Assembly kernels every run.
 <p float="left">
   <img src="https://github.com/Milkz03/LBYARCH-x86toC/assets/105696813/1dece165-5dab-43aa-8133-6a7aa7339c26" width="39%" />
   <img src="https://github.com/Milkz03/LBYARCH-x86toC/assets/105696813/f96e3a0a-9147-4ac6-a02d-a1682e0bd577" width="39%" /> 
